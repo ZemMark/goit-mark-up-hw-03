@@ -9,10 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -21,24 +18,24 @@
         <a href="./index.html" lang="en" class="logo"
           ><span class="logo-link">Web</span><span></span>Studio</a
         >
-        <div class="inline-box-links">
+        <div>
           <ul class="nav-links list">
             <li><a href="./index.html" class="link current">Студія</a></li>
             <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="./test.html" class="link">Контакти</a></li>
+            <li><a href="" class="link">Контакти</a></li>
           </ul>
         </div>
       </nav>
-      <ul class="nav-contacts list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contact link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="contact link">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      <div class="container">
+        <ul class="nav-contacts list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="contact link">info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="contact link">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -48,7 +45,7 @@
         </h1>
         <button type="button" class="button secondary">Замовити послугу</button>
       </section>
-      <section class="">
+      <section class="features">
         <!-- переваги -->
         <h2 class="features hide">переваги</h2>
         <div class="container">
@@ -83,9 +80,9 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="container">
         <h2 class="section-title">Чим ми займаємося</h2>
-        <ul>
+        <ul class="list margin">
           <li>
             <img src="./images/coding.jpg" alt="Створення сайту" width="370" />
           </li>
@@ -107,8 +104,9 @@
       </section>
 
       <section class="team bgc">
-        <h2 class="section-title">Наша команда</h2>
-        <ul>
+        <div class="container">
+          <h2 class="section-title">Наша команда</h2>
+        <ul class="list margin">
           <li>
             <img
               src="./images/designer.jpg"
@@ -146,10 +144,12 @@
             <p lang="en">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a lang="en" href="./index.html" class="footer-logo"
+      <div class="container ">
+        <a lang="en" href="./index.html" class="footer-logo"
         ><span class="logo-link">Web</span>Studio</a
       >
       <address class="address">
@@ -175,6 +175,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
