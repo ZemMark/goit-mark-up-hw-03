@@ -32,6 +32,11 @@ body {
   letter-spacing: 0.03em;
   /* font-size: 14; */
 }
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
 /* параграфи в файлі index.html */
 p {
@@ -56,8 +61,8 @@ p {
 }
 /* відступи від кнопок сторінка портфоліо */
 ul.buttons {
-  margin-bottom: 50px;
-  padding-bottom: 0px;
+  padding-bottom: 50px;
+  /* padding-bottom: 0px; */
 }
 /* стилізація кнопок на сторінці портфоліо */
 
@@ -171,7 +176,7 @@ h1, h2, h3, h4, h5, h6{
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 2px sloid red;
+  /* outline: 2px sloid red; */
 }
 
 .nav-contacts .contact {
@@ -343,20 +348,20 @@ ul {
 }
 .footer-logo {
     margin-top: 60px;
-    outline: 2px solid teal;
+    /* outline: 2px solid teal; */
     
 }
 
 .container{
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-top: 0px;
   
   /* display: inline-block; */
   width: 1200px;
   padding-bottom: 0px;
   /* margin: 0px; */
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 
 }
 .function-marg{
@@ -382,5 +387,73 @@ address ul{
 .address-links{
   padding-bottom: 60px;
 }
+/* .portfolio>.item:nth-child(2n+1){
+  background-color: var(--bgc-secondary)
+} */
+
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  align-items: srart;
+  justify-content: space-around;
+  padding-left: 215px;
+  padding-right: 215px;
+}
+.features .item:not(:last-child){
+  margin-right: 30px;
+}
+.button-item:not(:last-child){
+  margin-right: 8px;
+}
+/* індекс хтмл наша команда */
+ul.list.function-marg{
+  display: flex;
+  padding-left: 215px;
+  padding-right: 215px;
+
+}
+ul.list .item:not(:last-child){
+  margin-right: 30px;
+}
+/* .nav-contacts.list{
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+} */
+/* .nav-links.list{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+} */
+
+/* відступи в картинках блоку чим займаємося */
+.work-item:not(:last-child){
+  margin-right: 30px;
+
+}
+.nav-container .nav-links.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.buttons.list>.item:not(:last-child){
+  margin-right: 8px;
+}
+.container>ul.portfolio{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+ul.portfolio>.item{
+  flex-basis: calc(100/3);
+
+}
 
 
+/* ul.portfolio>.item:not(:last-child){
+  margin-right: 30px;
+} */
