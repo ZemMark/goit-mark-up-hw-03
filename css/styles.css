@@ -329,8 +329,17 @@ ul {
 /* .ul .address-links{
     text-align: left;
 } */
-.hide {
-  display: none;
+.visually-hidden {
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 /* редагування стилю тексту на сторінці портфоліо */
 .portfolio-link {
@@ -376,6 +385,10 @@ body ul{
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
+}
+
+address{
+  font-style: normal;
 }
 
 /* утелита для відступів в списку адрес футера  */
