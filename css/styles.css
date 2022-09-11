@@ -67,6 +67,7 @@ ul.buttons {
 /* стилізація кнопок на сторінці портфоліо */
 
 .button.primaru {
+  
   font-family: inherit;
   background-color: var(--button-background);
   font-style: normal;
@@ -109,9 +110,12 @@ ul.buttons {
 
 /* стилізація хедера */
 a.logo {
+  display: flex;
   color: rgba(0, 0, 0, 1);
   padding-top: 24px;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+  margin-left: 215px;
 }
 /* .logo:visited{
     color: (33, 33, 33, 1);
@@ -178,21 +182,62 @@ h1, h2, h3, h4, h5, h6{
   margin-left: auto;
   /* outline: 2px sloid red; */
 }
+/* оформлення */
+ul.nav-contacts.list{
+  display: flex;
+  padding-bottom: 0px;
+  margin-left: auto;
+  margin-right: 215px;
+}
+ul.nav-contacts.list > li+li{
+  margin-left: 50px;
+}
+div.flex-header .nav{
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
 
 .nav-contacts .contact {
-  display: inline-block;
-  color: rgba(117, 117, 117, 1);
+  display: block;
+  
   font-weight: 500;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  
+  color: rgba(117, 117, 117, 1);
+  /* outline: 2px solid teal; */
 }
 .contact:hover,
 .contact:focus {
   color: #2196f3;
 }
-/* стилізація блоку з головною навігацією на головній сторінці в хедері*/
+
+/*-ПОСИЛАННЯ в хедері 
+-стилізація блоку з головною навігацією на головній 
+сторінці в хедері*/
 .nav-links .link {
-  color: rgba(33, 33, 33, 1);
+  display: block;
+  
   font-weight: 500;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: rgba(33, 33, 33, 1);
+  /* outline: 2px solid teal; */
+  
 }
+.nav-links.list > .item.item:not(:last-child){
+  margin-right: 50px;
+
+}
+ul.nav-links.list{
+  padding-bottom: 0px;
+}
+
+
+
 .nav-links .link:hover,
 .link:focus {
   color: rgba(33, 150, 243, 1);
@@ -449,12 +494,15 @@ ul.list .item:not(:last-child){
 
 }
 .nav-container .nav-links.list{
-  display: flex;
+  display: block;
   flex-direction: row;
   justify-content: center;
+
 }
+/* кнопки фільтри на портфоліо */
 .buttons.list>.item:not(:last-child){
   margin-right: 8px;
+
 }
 .container>ul.portfolio{
   display: flex;
@@ -464,9 +512,21 @@ ul.list .item:not(:last-child){
 ul.portfolio>.item{
   flex-basis: calc(100/3);
 
+
 }
 
 
 /* ul.portfolio>.item:not(:last-child){
   margin-right: 30px;
 } */
+.nav-links.list{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* outline: 2px solid red; */
+  
+}
+.item{
+  /* outline: 2px solid teal; */
+  align-items: stretch;
+}

@@ -13,29 +13,37 @@
   </head>
   <body>
     <header>
-      <nav class="nav container">
-        <a href="./index.html" lang="en" class="logo"
-          ><span class="logo-link">Web</span><span></span>Studio</a
-        >
-        <ul class="nav-links list">
-          <li><a href="./index.html" class="link">Студія</a></li>
-          <li><a href="./portfolio.html" class="link current">Портфоліо</a></li>
-          <li><a href="" class="link">Контакти</a></li>
-        </ul>
-      </nav>
-      <div class="container">
-        <ul class="nav-contacts list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="contact link link"
-              >info@devstudio.com</a
+      <div class="flex-header">
+        <nav class="nav">
+          <!-- <div class="mainlogo"> -->
+            <a href="./index.html" lang="en" class="logo"
+              ><span class="logo-link">Web</span><span></span>Studio</a
             >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="contact link link"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+            <ul class="nav-links list">
+              <li class="item"><a href="./index.html" class="link">Студія</a></li>
+              <li class="item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+              <li class="item"><a href="" class="link">Контакти</a></li>
+            </ul>
+            <!-- Я РОЗУМІЮ ЩО КОНТАКТИ ЦЕ НЕ ТЕГ NAV АЛЕ ІНАКШЕ ВОНИ В ОДИН
+            РЯД В ХЕДЕРІ НЕ МОГЛИ СТАВАТИ, БО ФЛЕКС ТЛЬТКИ НА ДІТЕЙ ВПЛИВАЄ -->
+            
+            <ul class="nav-contacts list">
+              <li>
+                <a href="mailto:info@devstudio.com" class="contact link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380961111111" class="contact link link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </nav>
+  
+          
+          <!-- </div> -->
+          
       </div>
     </header>
     <main>
@@ -45,7 +53,7 @@
         <div class="container">
           <ul class="buttons list">
             <li class="item"><button type="button" class="button primaru">Усі</button></li>
-            <li>
+            <li class="item">
               <button type="button" class="button primaru">Веб-сайти</button>
             </li>
             <li class="item">
