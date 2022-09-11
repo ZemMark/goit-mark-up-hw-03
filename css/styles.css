@@ -79,6 +79,7 @@ ul.buttons {
   min-width: 73px;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 94px;
 }
 .button.primaru:hover,
 .button.primaru:active,
@@ -418,9 +419,7 @@ ul {
   /* outline: 2px solid red; */
 
 }
-.function-marg{
-  margin: 0px 0px;
-}
+
 .list-portfolio{
   padding-top: 94px;
   padding-bottom: 50px;
@@ -507,6 +506,7 @@ ul.list .item:not(:last-child){
 .container>ul.portfolio{
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 94px;
 
 }
 ul.portfolio>.item{
@@ -515,6 +515,12 @@ ul.portfolio>.item{
 
 }
 
+.card-set{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  
+}
 
 /* ul.portfolio>.item:not(:last-child){
   margin-right: 30px;
@@ -527,6 +533,6 @@ ul.portfolio>.item{
   
 }
 .item{
-  /* outline: 2px solid teal; */
+  outline: 2px solid teal;
   align-items: stretch;
 }
