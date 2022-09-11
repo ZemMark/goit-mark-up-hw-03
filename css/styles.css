@@ -112,6 +112,10 @@ ul.buttons {
 }
 
 /* стилізація хедера */
+.header{
+  border-bottom: 1px solid #ECECEC;
+}
+
 a.logo {
   display: flex;
   color: rgba(0, 0, 0, 1);
@@ -285,7 +289,7 @@ ul.nav-links.list{
 .features-title {
   font-size: 14px;
   line-height: 1.14;
-  padding-top: 92px;
+  /* padding-top: 92px; */
   margin-bottom: 10px;
 
 }
@@ -326,7 +330,7 @@ ul.nav-links.list{
 
 /* оформлення заголовків h2 */
 .section-title {
-  padding-top: 94px;
+  /* padding-top: 94px; */
   padding-bottom: 50px;
   
   color: rgba(33, 33, 33, 1);
@@ -359,7 +363,7 @@ ul.nav-links.list{
 .list {
   list-style: none;
   padding-top: 0px;
-  padding-bottom: 94px;
+  /* padding-bottom: 94px; */
   padding-left: 0;
   
 
@@ -569,3 +573,10 @@ ul.list .item:not(:last-child){
 -окрема утиліта з нижнім падингом
 
 */
+.container.section{
+  padding-bottom: 0px;
+}
+.set-padding{
+  padding-top: 0px;
+}
+
