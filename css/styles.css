@@ -42,6 +42,23 @@ img {
   height: auto;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  /* outline: 2px sloid red; */
+}
+
+.flex-container{
+  display: flex;
+  
+  
+}
+
+
+
 
 
 /* параграфи в файлі index.html */
@@ -67,11 +84,7 @@ img {
 
 }
 
-/* відступи від кнопок сторінка портфоліо */
-ul.buttons {
-  padding-bottom: 50px;
-  /* padding-bottom: 0px; */
-}
+
 
 /* стилізація кнопок на сторінці портфоліо */
 
@@ -101,7 +114,7 @@ ul.buttons {
 /* кнопка "замовити послугу" */
 .button.secondary {
   padding: 10px 32px;
-  margin-bottom: 200px;
+  
 
 
   background-color: var(--accent-color);
@@ -126,12 +139,15 @@ ul.buttons {
 }
 
 a.logo {
-  display: flex;
   color: rgba(0, 0, 0, 1);
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
-  margin-left: 215px;
+  
+}
+
+.nav{
+  margin-right: auto;
 }
 
 /* .logo:visited{
@@ -162,11 +178,6 @@ h6 {
   text-transform: uppercase;
 }
 
-/* список адреси в футері */
-/* .address .ul{
-  padding-top: 0px;
-} */
-
 
 /* оформлення шрифра для лого в футурі та хедері */
 .logo,
@@ -179,20 +190,12 @@ h6 {
   text-align: left;
   text-decoration: none;
 
-
-  /* font-family: Oleo Script;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 36px;
-    letter-spacing: 0.03em;
-    text-align: left; */
 }
-
 .footer .footer-logo {
-  color: #ffffff;
-  margin-top: 60px;
+  display: block;
   margin-bottom: 20px;
-
+  
+  color: #ffffff;
 
 
 }
@@ -200,32 +203,22 @@ h6 {
 
 
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  /* outline: 2px sloid red; */
-}
 
 /* оформлення */
 ul.nav-contacts.list {
   display: flex;
   padding-bottom: 0px;
   margin-left: auto;
-  margin-right: 215px;
+  
 }
-
 ul.nav-contacts.list>li+li {
   margin-left: 50px;
 }
 
-div.flex-header .nav {
+.container > .nav{
   display: flex;
-  /* justify-content: space-around; */
-  align-items: center;
 }
+
 
 
 .nav-contacts .contact {
@@ -236,7 +229,7 @@ div.flex-header .nav {
   padding-top: 32px;
 
   color: rgba(117, 117, 117, 1);
-  line-height: 1.17px;
+  line-height: 1.17;
   font-size: 14px;
   letter-spacing: 0.02em;
   /* outline: 2px solid teal; */
@@ -287,15 +280,6 @@ ul.nav-links.list {
 
 /* стилізація блоку герой */
 
-.hero.container
-
-/* .hero{
-    position: absolute;
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
-} */
 .hero-title>h1 {
   color: #fff;
   /* line-height: 1.36px; */
@@ -303,22 +287,26 @@ ul.nav-links.list {
   letter-spacing: 0.06em;
 }
 
+
+.hero.section{
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 .hero>.hero-title {
+  
   width: 696px;
   font-weight: 900;
-  /* text-align: center; */
   font-size: 44px;
-  padding-top: 200px;
-  /* padding-bottom: 210px; */
   margin-bottom: 30px;
-  /* margin-left: 452px;
-  margin-right: 452px; */
   line-height: 1.36;
 }
 
 .hero {
   text-align: center;
   /* outline: 5px solid red; */
+  padding-top: 200px;
+  padding-bottom: 200px;
+
 }
 
 /* заголовки блоку "переваги" головної сторінки  */
@@ -378,7 +366,7 @@ ul.nav-links.list {
 /* оформлення заголовків h2 */
 .section-title {
   /* padding-top: 94px; */
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   color: rgba(33, 33, 33, 1);
   font-weight: 700;
@@ -390,16 +378,14 @@ ul.nav-links.list {
   /* text-align: center; */
 }
 
-/* відступи між елементами наша команда */
-.team img {
+div.card-content{
+  margin-top: 30px;
   margin-bottom: 30px;
-  
-  
 }
 
 .team .card-text {
-  padding-bottom: 30px;
-  
+  margin-top: 0;
+  margin-bottom: 0;
   color: #757575;
   font-size: 16px;
   line-height: 1.18;
@@ -407,6 +393,8 @@ ul.nav-links.list {
   text-align: center;
 
 }
+
+
 
 .team .card-heading {
   margin-bottom: 10px;
@@ -479,7 +467,11 @@ ul {
 
 .portfolio p {
   font-size: 16px;
+  color: 
+  rgba(117, 117, 117, 1);
   line-height: 1.87;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .portfolio h2 {
@@ -489,30 +481,13 @@ ul {
   line-height: 2;
 }
 
-.footer-logo {
-  margin-top: 60px;
-  /* outline: 2px solid teal; */
 
-}
 
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 0px;
-
-  /* display: inline-block; */
-  width: 1200px;
-  padding-bottom: 0px;
-  /* margin: 0px; */
-  /* outline: 2px solid red; */
-
-}
-
-.list-portfolio {
+/* .list-portfolio {
   padding-top: 94px;
   padding-bottom: 50px;
   margin-left: 0;
-}
+} */
 
 body ul {
   margin-top: 0px;
@@ -524,16 +499,7 @@ address {
   font-style: normal;
 }
 
-/* утелита для відступів в списку адрес футера  */
-address ul {
-  padding-bottom: 60px;
-  margin-bottom: 0;
-  margin-top: 20px;
-}
 
-.address-links {
-  padding-bottom: 60px;
-}
 
 /* .portfolio>.item:nth-child(2n+1){
   background-color: var(--bgc-secondary)
@@ -544,7 +510,7 @@ address ul {
   justify-content: center;
 }
 
-.flex {
+/* .flex {
   display: flex;
   flex-direction: row;
   align-items: srart;
@@ -552,10 +518,10 @@ address ul {
   padding-left: 215px;
   padding-right: 215px;
   padding-bottom: 94px;
-}
+} */
 
 .features .item{
-  min-width: 270px;
+  width: 270px;
 }
 
 .features .item:not(:last-child) {
@@ -569,9 +535,8 @@ address ul {
 /* індекс хтмл наша команда */
 ul.list.function-marg {
   display: flex;
-  justify-content: center;
-  padding-left: 215px;
-  padding-right: 215px;
+  
+  
 
 
 }
@@ -597,7 +562,7 @@ ul.list .item:not(:last-child) {
 
 }
 .work-item{
-  min-width: 370px;
+  width: 370px;
 }
 
 .nav-container .nav-links.list {
@@ -685,10 +650,25 @@ ul.list .item:not(:last-child) {
 -окрема утиліта з нижнім падингом
 
 */
-.container.section {
-  padding-bottom: 0px;
+.padding-footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.text{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .set-padding {
-  padding-top: 0px;
+  padding-top: 50px;
+}
+.set-top-padding{
+  padding-top: 94px;
+}
+.section-features{
+  padding-top: 0;
+  padding-bottom: 94px;
 }

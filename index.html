@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WebStudio</title>
+  <title>WebStudio-Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet"
@@ -15,9 +15,9 @@
 
 <body>
   <header class="header">
-    <div class="flex-header">
+    <div class="container flex-container">
       <nav class="nav">
-        <!-- <div class="mainlogo"> -->
+
         <a href="./index.html" lang="en" class="logo"><span class="logo-link">Web</span><span></span>Studio</a>
         <ul class="nav-links list">
           <li class="item">
@@ -28,9 +28,10 @@
           </li>
           <li class="item"><a href="" class="link">Контакти</a></li>
         </ul>
-        <!-- Я РОЗУМІЮ ЩО КОНТАКТИ ЦЕ НЕ ТЕГ NAV АЛЕ ІНАКШЕ ВОНИ В ОДИН
-            РЯД В ХЕДЕРІ НЕ МОГЛИ СТАВАТИ, БО ФЛЕКС ТЛЬТКИ НА ДІТЕЙ ВПЛИВАЄ -->
+        
 
+      </nav>
+      <div class="contacts flex-container">
         <ul class="nav-contacts list">
           <li>
             <a href="mailto:info@devstudio.com" class="contact link link">info@devstudio.com</a>
@@ -39,9 +40,7 @@
             <a href="tel:+380961111111" class="contact link link">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-
-      <!-- </div> -->
+      </div>
     </div>
   </header>
   <main>
@@ -51,11 +50,17 @@
       </h1>
       <button type="button" class="button secondary">Замовити послугу</button>
     </section>
+    
+    
+    
     <section class="features section">
       <!-- переваги -->
       <h2 class="features visually-hidden">переваги</h2>
+      
+      
       <div class="container">
-        <ul class="list flex">
+        <ul class="list flex-container">
+          
           <li class="item">
             <h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="text">
@@ -63,6 +68,7 @@
               формування позиції.
             </p>
           </li>
+          
           <li class="item">
             <h3 class="features-title">ПУНКТУАЛЬНІСТЬ</h3>
             <p class="text">
@@ -70,12 +76,14 @@
               тягне у себе.
             </p>
           </li>
+          
           <li class="item">
             <h3 class="features-title">ПЛАНУВАННЯ</h3>
             <p class="text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
+          
           <li class="item">
             <h3 class="features-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p class="text">
@@ -83,22 +91,32 @@
               планових завдань.
             </p>
           </li>
+        
         </ul>
       </div>
     </section>
-    <section class="container section">
+    
+    
+    <section class="container section-features">
       <h2 class="section-title">Чим ми займаємося</h2>
-      <ul class="list flex">
-        <li class="work-item">
-          <img src="./images/coding.jpg" alt="Створення сайту" width="370" />
-        </li>
-        <li class="work-item">
-          <img src="./images/adaptation.jpg" alt="Адаптація сайту для різних пристроїв" width="370" />
-        </li>
-        <li class="work-item">
-          <img src="./images/design.jpg" alt="Розробка дизайну для сайту" width="370" />
-        </li>
-      </ul>
+      
+      
+      <div class="flex-container">
+        <ul class="list flex-container">
+        
+          <li class="work-item">
+            <img src="./images/coding.jpg" alt="Створення сайту" width="370" />
+          </li>
+          
+          <li class="work-item">
+            <img src="./images/adaptation.jpg" alt="Адаптація сайту для різних пристроїв" width="370" />
+          </li>
+          
+          <li class="work-item">
+            <img src="./images/design.jpg" alt="Розробка дизайну для сайту" width="370" />
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="team bgc section">
@@ -106,58 +124,50 @@
         <h2 class="section-title">Наша команда</h2>
         <ul class="list function-marg">
           <li class="item">
-            <article>
-              <div class="card-photo">
-                <img src="./images/designer.jpg" alt="Розробник продукту Ігор Дем'яненко" width="270" />
-              </div>
-              <div class="card-content">
-                <h3 class="card-heading">Ігор Дем'яненко</h3>
-                <p class="card-text" lang="en">Product Designer</p>
-              </div>
-            </article>
+            <div class="card-photo">
+              <img src="./images/designer.jpg" alt="Розробник продукту Ігор Дем'яненко" width="270" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-heading">Ігор Дем'яненко</h3>
+              <p class="card-text" lang="en">Product Designer</p>
+            </div>
           </li>
 
           <li class="item">
-            <article>
-              <div class="card-photo">
-                <img src="./images/developer.jpg" alt="Фронтенд розробник Ольга Рєпіна" width="270" />
-              </div>
-              <div class="cart-content">
-                <h3 class="card-heading">Ольга Рєпіна</h3>
-                <p class="card-text" lang="en">Frontend Developer</p>
-              </div>
-            </article>
+            <div class="card-photo">
+              <img src="./images/developer.jpg" alt="Фронтенд розробник Ольга Рєпіна" width="270" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-heading">Ольга Рєпіна</h3>
+              <p class="card-text" lang="en">Frontend Developer</p>
+            </div>
           </li>
 
           <li class="item">
-            <article>
-              <div class="card-photo">
-                <img src="./images/marketing.jpg" alt="Маркетолог Микола Тарасов" width="270" />
-              </div>
-              <div class="card-content">
-                <h3 class="card-heading">Микола Тарасов</h3>
-                <p class="card-text" lang="en">Marketing</p>
-              </div>
-            </article>
+            <div class="card-photo">
+              <img src="./images/marketing.jpg" alt="Маркетолог Микола Тарасов" width="270" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-heading">Микола Тарасов</h3>
+              <p class="card-text" lang="en">Marketing</p>
+            </div>
           </li>
 
           <li class="item">
-            <article>
-              <div class="card-photo">
-                <img src="./images/member.jpg" alt="Розробник інтерфейсу" width="270" />
-              </div>
-              <div class="card-content">
-                <h3 class="card-heading">Михайло Єрмаков</h3>
-                <p class="card-text" lang="en">UI Designer</p>
-              </div>
-            </article>
+            <div class="card-photo">
+              <img src="./images/member.jpg" alt="Розробник інтерфейсу" width="270" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-heading">Михайло Єрмаков</h3>
+              <p class="card-text" lang="en">UI Designer</p>
+            </div>
           </li>
         </ul>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="container padding-footer">
       <a lang="en" href="./index.html" class="footer-logo"><span class="logo-link">Web</span>Studio</a>
       <address class="address">
         <ul class="address-links list">

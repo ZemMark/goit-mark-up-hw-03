@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>WebStudio-Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/styles.css" />
@@ -13,20 +13,23 @@
 
 <body>
   <header class="header">
-    <div class="flex-header">
+    <div class="container flex-container">
       <nav class="nav">
-        <!-- <div class="mainlogo"> -->
+
         <a href="./index.html" lang="en" class="logo"><span class="logo-link">Web</span><span></span>Studio</a>
         <ul class="nav-links list">
-          <li class="item"><a href="./index.html" class="link">Студія</a></li>
           <li class="item">
-            <a href="./portfolio.html" class="link current">Портфоліо</a>
+            <a href="./index.html" class="link">Студія</a>
+          </li>
+          <li class="item">
+            <a href="./portfolio.html" class="link  current">Портфоліо</a>
           </li>
           <li class="item"><a href="" class="link">Контакти</a></li>
         </ul>
-        <!-- Я РОЗУМІЮ ЩО КОНТАКТИ ЦЕ НЕ ТЕГ NAV АЛЕ ІНАКШЕ ВОНИ В ОДИН
-            РЯД В ХЕДЕРІ НЕ МОГЛИ СТАВАТИ, БО ФЛЕКС ТЛЬТКИ НА ДІТЕЙ ВПЛИВАЄ -->
+        
 
+      </nav>
+      <div class="contacts flex-container">
         <ul class="nav-contacts list">
           <li>
             <a href="mailto:info@devstudio.com" class="contact link link">info@devstudio.com</a>
@@ -35,13 +38,11 @@
             <a href="tel:+380961111111" class="contact link link">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-
-      <!-- </div> -->
+      </div>
     </div>
   </header>
   <main>
-    <section class="container section">
+    <section class="container set-top-padding">
       <!-- Портфоліо -->
       <h1 class="visually-hidden">Портфоліо</h1>
       <div class="container">
@@ -67,12 +68,13 @@
     <section class="section set-padding">
       <div class="container">
         <ul class="portfolio card-set">
-          <li class="item">
+          
+          <li class="item border">
             <article>
               <div class="card-portfolio">
                 <a href="" class="portfolio-link link">
                   <img src="./images/portfolio/laptop.jpg" alt="ноутбук з зображенням веб-сторінки" width="370" />
-                  <div class="border">
+                  <div class="text">
                     <h2>Технокряк</h2>
                     <p class="portfolio-subtitle">Веб-сайт</p>
                   </div>
@@ -81,13 +83,13 @@
             </article>
           </li>
 
-          <li class="item">
+          <li class="item border">
             <article>
               <div class="card-portfolio">
                 <a href="" class="portfolio-link link">
                   <img src="./images/portfolio/basketball.jpg" alt="два хлоаця грають в баскетбол" width="370" />
                   <!--не знаю як змінити мову на англійську, якщо в рядку перше слово "постер" українською  -->
-                  <div class="border">
+                  <div class="text">
                     <h2>Постер New Orlean vs Golden Star</h2>
                     <p class="portfolio-subtitle">Дизайн</p>
                   </div>
@@ -96,14 +98,14 @@
             </article>
           </li>
 
-          <li class="item">
+          <li class="item border">
             <article>
               <div class="card-portfolio">
                 <a href="" class="portfolio-link link">
                   <img src="./images/portfolio/seafood.jpg"
                     alt="логотип ресторану з однотонним лососем на задньому фоні" width="370" />
                   <!-- те саме питання з мовою заголовку -->
-                  <div class="border">
+                  <div class="text">
                     <h2>Ресторан Seafood</h2>
                     <p class="portfolio-subtitle">Додаток</p>
                   </div>
@@ -112,12 +114,12 @@
             </article>
           </li>
 
-          <li class="item">
+          <li class="item border">
             <article>
               <div class="card-portfolio">
                 <a href="" class="portfolio-link link">
                   <img src="./images/portfolio/headphones.jpg" alt="навушники" width="370" />
-                  <div class="border">
+                  <div class="text">
                     <h2>Проєкт Prime</h2>
                     <p class="portfolio-subtitle">Маркетинг</p>
                   </div>
@@ -126,12 +128,12 @@
             </article>
           </li>
 
-          <li class="item">
+          <li class="item border">
             <article>
               <div class="card-portfolio">
                 <a href="" class="portfolio-link link">
                   <img src="./images/portfolio/boxes.jpg" alt="дві коробки" width="370" />
-                  <div class="border">
+                  <div class="text">
                     <h2>Проєкт Boxes</h2>
                     <p class="portfolio-subtitle">Додаток</p>
                   </div>
@@ -140,12 +142,12 @@
             </article>
           </li>
 
-          <li class="item">
+          <li class="item border">
             <article>
               <div class="card-portfolio">
                 <a href="" class="portfolio-link link">
                   <img src="./images/portfolio/iMac.jpg" alt="комп'ютер відомої марки" width="370" />
-                  <div class="border">
+                  <div class="text">
                     <h2 lang="en">Inspiration has no Borders</h2>
                     <p class="portfolio-subtitle">Веб-сайт</p>
                   </div>
@@ -154,12 +156,12 @@
             </article>
           </li>
 
-          <li class="item">
+          <li class="item border">
             <article>
               <div class="card-portfolio">
                 <a href="" class="portfolio-link link">
                   <img src="./images/portfolio/book.jpg" alt="журнал" width="370" />
-                  <div class="border">
+                  <div class="text">
                     <h2>Видання Limited Edition</h2>
                     <p class="portfolio-subtitle">Дизайн</p>
                   </div>
@@ -168,12 +170,12 @@
             </article>
           </li>
 
-          <li class="item">
+          <li class="item border">
             <article>
               <div class="card-portfolio">
                 <a href="" class="portfolio-link link"><img src="./images/portfolio/lab.jpg"
                     alt="картонний ярлик з логотипом проєкту" width="370" />
-                  <div class="border">
+                  <div class="text">
                     <h2>Проєкт LAB</h2>
                     <p class="portfolio-subtitle">Маркетинг</p>
                   </div>
@@ -182,12 +184,12 @@
             </article>
           </li>
 
-          <li class="item">
+          <li class="item border">
             <article>
               <div class="card-portfolio">
                 <a href="" class="portfolio-link link">
                   <img src="./images/portfolio/hands.jpg" alt="руки над клавіатурою ноутбуку" width="370" />
-                  <div class="border">
+                  <div class="text">
                     <h2>Growing Business</h2>
                     <p class="portfolio-subtitle">Додаток</p>
                   </div>
@@ -195,52 +197,12 @@
               </div>
             </article>
           </li>
-
-          <!-- <li class="item">
-              
-            </li>
-            
-            
-            
-            <li class="item">
-              
-            </li>
-            
-            
-            <li class="item">
-              
-            </li>
-            
-            
-            <li class="item">
-              
-            </li>
-            
-            
-            <li class="item">
-              
-            </li>
-            
-            
-            <li class="item">
-              
-            </li>
-            
-            
-            <li class="item">
-              
-            </li>
-            
-            
-            <li class="item">
-              
-            </li> -->
         </ul>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="container padding-footer">
       <a lang="en" href="./index.html" class="footer-logo"><span class="logo-link">Web</span>Studio</a>
       <address class="address">
         <ul class="address-links list">
