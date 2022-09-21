@@ -4,9 +4,10 @@
 /* адресС АЛЕ НЕ КАРТА З АДРЕСОЮ БО АДРЕСА ПРОСТО БІЛА rgba(255, 255, 255, 0.6) */
 /* другорядний колір фону #F5F4FA */
 
-html{
+html {
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -24,7 +25,7 @@ html{
   --common-bgc: #f5f5f5;
   --footer-hero-bgc: #2f303a;
   --card-gap: 30px;
-  
+
 }
 
 body {
@@ -34,20 +35,22 @@ body {
   letter-spacing: 0.03em;
   /* font-size: 14; */
 }
-img{
+
+img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
 /* параграфи в файлі index.html */
-p {
+.features .text {
   color: rgba(117, 117, 117, 1);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   padding: 0px 0px;
   margin: 0px 0px;
+  letter-spacing: 0.03em;
 }
 
 /* загальна стилізація кнопок */
@@ -57,22 +60,24 @@ p {
   font-size: 16px;
   border-radius: 4px;
   background-color: var(--button-background);
-  border: 4px solid  #f5f4fa;
+  border: 4px solid #f5f4fa;
   border: 1px solid transparent;
-  
+
 }
+
 /* відступи від кнопок сторінка портфоліо */
 ul.buttons {
   padding-bottom: 50px;
   /* padding-bottom: 0px; */
 }
+
 /* стилізація кнопок на сторінці портфоліо */
 
 .button.primaru {
-  
+
   font-family: inherit;
   background-color: var(--button-background);
-  font-style: normal;
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -83,18 +88,20 @@ ul.buttons {
   letter-spacing: 0.03em;
   /* margin-top: 94px; */
 }
+
 .button.primaru:hover,
 .button.primaru:active,
 .button.primaru:focus {
   background-color: var(--accent-color);
   color: rgba(255, 255, 255, 1);
 }
+
 /* кнопка "замовити послугу" */
 .button.secondary {
   padding: 10px 32px;
   margin-bottom: 200px;
-  
-  
+
+
   background-color: var(--accent-color);
   color: rgba(255, 255, 255, 1);
   line-height: 1.87;
@@ -102,7 +109,7 @@ ul.buttons {
   min-width: 216px;
   text-align: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  
+
   border: 1px solid transparent;
   /* position: absolute;
     width: 216px;
@@ -112,7 +119,7 @@ ul.buttons {
 }
 
 /* стилізація хедера */
-.header{
+.header {
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -124,24 +131,33 @@ a.logo {
   margin-right: 93px;
   margin-left: 215px;
 }
+
 /* .logo:visited{
     color: (33, 33, 33, 1);
 } */
 .logo-link {
   color: rgba(33, 150, 243, 1);
 }
+
 /* cстилізація всіх заголовків */
-h1, h2, h3, h4, h5, h6{
-  font-style: 400;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  
   margin: 0px;
 }
+
 /* .nav-links .link{
   padding-top: 32px;
   margin-bottom: 32px;
 } */
-.hero>h1{
+.hero>h1 {
   color: #fff;
-  max-width: 696;
+  width: 696px;
+  text-transform: uppercase;
 }
 
 /* список адреси в футері */
@@ -160,7 +176,7 @@ h1, h2, h3, h4, h5, h6{
   letter-spacing: 0.03em;
   text-align: left;
   text-decoration: none;
- 
+
 
   /* font-family: Oleo Script;
     font-size: 26px;
@@ -169,19 +185,20 @@ h1, h2, h3, h4, h5, h6{
     letter-spacing: 0.03em;
     text-align: left; */
 }
+
 .footer .footer-logo {
   color: #ffffff;
   margin-top: 60px;
   margin-bottom: 20px;
-  
 
-  
+
+
 }
 
 
 
 
-.container{
+.container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -189,17 +206,20 @@ h1, h2, h3, h4, h5, h6{
   margin-left: auto;
   /* outline: 2px sloid red; */
 }
+
 /* оформлення */
-ul.nav-contacts.list{
+ul.nav-contacts.list {
   display: flex;
   padding-bottom: 0px;
   margin-left: auto;
   margin-right: 215px;
 }
-ul.nav-contacts.list > li+li{
+
+ul.nav-contacts.list>li+li {
   margin-left: 50px;
 }
-div.flex-header .nav{
+
+div.flex-header .nav {
   display: flex;
   /* justify-content: space-around; */
   align-items: center;
@@ -208,14 +228,18 @@ div.flex-header .nav{
 
 .nav-contacts .contact {
   display: block;
-  
+
   font-weight: 500;
   padding-bottom: 32px;
   padding-top: 32px;
-  
+
   color: rgba(117, 117, 117, 1);
+  line-height: 1.17px;
+  font-size: 14px;
+  letter-spacing: 0.02em;
   /* outline: 2px solid teal; */
 }
+
 .contact:hover,
 .contact:focus {
   color: #2196f3;
@@ -226,20 +250,25 @@ div.flex-header .nav{
 сторінці в хедері*/
 .nav-links .link {
   display: block;
-  
+
   font-weight: 500;
   padding-top: 32px;
   padding-bottom: 32px;
 
   color: rgba(33, 33, 33, 1);
+  line-height: 1.17;
+  font-size: 14px;
+  letter-spacing: 0.02em;
   /* outline: 2px solid teal; */
-  
+
 }
-.nav-links.list > .item.item:not(:last-child){
+
+.nav-links.list>.item.item:not(:last-child) {
   margin-right: 50px;
 
 }
-ul.nav-links.list{
+
+ul.nav-links.list {
   padding-bottom: 0px;
 }
 
@@ -249,6 +278,7 @@ ul.nav-links.list{
 .link:focus {
   color: rgba(33, 150, 243, 1);
 }
+
 .nav-links .link.current {
   color: rgba(33, 150, 243, 1);
 }
@@ -256,6 +286,7 @@ ul.nav-links.list{
 /* стилізація блоку герой */
 
 .hero.container
+
 /* .hero{
     position: absolute;
     width: 1600px;
@@ -269,8 +300,9 @@ ul.nav-links.list{
   /* margin: 0 auto; */
   letter-spacing: 0.06em;
 }
-.hero> .hero-title{
-  max-width: 696px;
+
+.hero>.hero-title {
+  width: 696px;
   font-weight: 900;
   /* text-align: center; */
   font-size: 44px;
@@ -279,12 +311,14 @@ ul.nav-links.list{
   margin-bottom: 30px;
   /* margin-left: 452px;
   margin-right: 452px; */
+  line-height: 1.36;
 }
 
 .hero {
   text-align: center;
   /* outline: 5px solid red; */
 }
+
 /* заголовки блоку "переваги" головної сторінки  */
 .features-title {
   font-size: 14px;
@@ -296,20 +330,31 @@ ul.nav-links.list{
 
 /* фон hero footer */
 .hero,
-.footer{
+.footer {
   background-color: var(--footer-hero-bgc)
 }
+
 /* посилання в футері */
 .map {
   color: #ffffff;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
 }
+
 .map:hover,
 .map:focus {
   color: #2196f3;
 }
+
 .address-links .contact {
   color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
+
 .address-links .contact:hover,
 .contact:focus {
   color: #2196f3;
@@ -322,7 +367,7 @@ ul.nav-links.list{
 .team.bgc {
   background-color: var(--bgc-secondary);
 
-  
+
   /* HELP!!!!!!!! Я НЕ РОЗУМІЮ ЧОГО НЕ ПЕРЕЗАПИСУЄТЬСЯ КОЛІР ДЛЯ ЦІЄЇ СЕКЦІЇ, А НАСТЛІДУЄЬБСЯ З body. у тегу 
   .team.bgc специфічність 20, а body - 1 */
 
@@ -332,29 +377,46 @@ ul.nav-links.list{
 .section-title {
   /* padding-top: 94px; */
   padding-bottom: 50px;
-  
+
   color: rgba(33, 33, 33, 1);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  
+
   /* text-align: center; */
 }
+
 /* відступи між елементами наша команда */
-.team img{
+.team img {
   margin-bottom: 30px;
 }
-.team p{
+
+.team .card-text {
   padding-bottom: 30px;
+  
+  color: #757575;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
 
 }
-.team h3{
+
+.team .card-heading {
   margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
 }
+
 .portfolio a {
   color: var(--title-color);
 }
+
 /* margin-top утиліта */
 /* .list>.margin{
   margin-top: 50px;
@@ -365,7 +427,7 @@ ul.nav-links.list{
   padding-top: 0px;
   /* padding-bottom: 94px; */
   padding-left: 0;
-  
+
 
 }
 
@@ -374,50 +436,56 @@ ul.nav-links.list{
 .link {
   text-decoration: none;
 }
+
 ul {
   list-style: none;
   margin-bottom: 94px;
 }
+
 /* .ul .address-links{
     text-align: left;
 } */
 .visually-hidden {
   position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
+
 /* редагування стилю тексту на сторінці портфоліо */
 .portfolio-link {
   font-size: 18px;
 }
+
 .portfolio p {
   font-size: 16px;
   line-height: 1.87;
 }
+
 .portfolio h2 {
   color: rgba(33, 33, 33, 1);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
 }
+
 .footer-logo {
-    margin-top: 60px;
-    /* outline: 2px solid teal; */
-    
+  margin-top: 60px;
+  /* outline: 2px solid teal; */
+
 }
 
-.container{
+.container {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 0px;
-  
+
   /* display: inline-block; */
   width: 1200px;
   padding-bottom: 0px;
@@ -426,39 +494,43 @@ ul {
 
 }
 
-.list-portfolio{
+.list-portfolio {
   padding-top: 94px;
   padding-bottom: 50px;
   margin-left: 0;
 }
-body ul{
+
+body ul {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
 }
 
-address{
+address {
   font-style: normal;
 }
 
 /* утелита для відступів в списку адрес футера  */
-address ul{
+address ul {
   padding-bottom: 60px;
   margin-bottom: 0;
   margin-top: 20px;
 }
-.address-links{
+
+.address-links {
   padding-bottom: 60px;
 }
+
 /* .portfolio>.item:nth-child(2n+1){
   background-color: var(--bgc-secondary)
 } */
 
-.buttons{
+.buttons {
   display: flex;
   justify-content: center;
 }
-.flex{
+
+.flex {
   display: flex;
   flex-direction: row;
   align-items: srart;
@@ -466,22 +538,27 @@ address ul{
   padding-left: 215px;
   padding-right: 215px;
 }
-.features .item:not(:last-child){
+
+.features .item:not(:last-child) {
   margin-right: 30px;
 }
-.button-item:not(:last-child){
+
+.button-item:not(:last-child) {
   margin-right: 8px;
 }
+
 /* індекс хтмл наша команда */
-ul.list.function-marg{
+ul.list.function-marg {
   display: flex;
   padding-left: 215px;
   padding-right: 215px;
 
 }
-ul.list .item:not(:last-child){
+
+ul.list .item:not(:last-child) {
   margin-right: 30px;
 }
+
 /* .nav-contacts.list{
   display: flex;
   justify-content: end;
@@ -494,23 +571,26 @@ ul.list .item:not(:last-child){
 } */
 
 /* відступи в картинках блоку чим займаємося */
-.work-item:not(:last-child){
+.work-item:not(:last-child) {
   margin-right: 30px;
 
 }
-.nav-container .nav-links.list{
+
+.nav-container .nav-links.list {
   display: block;
   flex-direction: row;
   justify-content: center;
 
 }
+
 /* кнопки фільтри на портфоліо */
-.buttons.list>.item:not(:last-child){
+.buttons.list>.item:not(:last-child) {
   margin-right: 8px;
 
 }
+
 /* .container>ul.portfolio{ */
-  
+
 /* } */
 
 
@@ -520,23 +600,24 @@ ul.list .item:not(:last-child){
   outline: 2px solid red;
 } */
 
-.card-set{
+.card-set {
   padding: 0px;
   margin: 0px;
   list-style: none;
-  
+
   display: flex;
   flex-wrap: wrap;
   /* padding-bottom: 94px; */
-  
+
   margin-top: calc(-1*var(--card-gap));
-  margin-left:calc(-1*var(--card-gap));
+  margin-left: calc(-1*var(--card-gap));
   /* outline: red 2px solid; */
-  
-  
+
+
 }
-.portfolio.card-set .item{
-  
+
+.portfolio.card-set .item {
+
   flex-basis: calc(100%/3 - var(--card-gap));
   margin-left: var(--card-gap);
   margin-top: var(--card-gap);
@@ -545,27 +626,31 @@ ul.list .item:not(:last-child){
 /* ul.portfolio>.item:not(:last-child){
   margin-right: 30px;
 } */
-.nav-links.list{
+.nav-links.list {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   /* outline: 2px solid red; */
-  
+
 }
-.item{
+
+.item {
   /* outline: 2px solid teal; */
   align-items: stretch;
 }
-.border{
-  border-right : 1px solid #EEEEEE;
-  border-left : 1px solid #EEEEEE;
-  border-bottom : 1px solid #EEEEEE;
-  
+
+.border {
+  border-right: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+
 }
-.section{
+
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 /* -прибрати падінг кнопок
 -продивитися де ще можна прибрати
 -можливо зробити окрему утиліту сектіон де відступи 94 вгорі та низу  
@@ -573,10 +658,10 @@ ul.list .item:not(:last-child){
 -окрема утиліта з нижнім падингом
 
 */
-.container.section{
+.container.section {
   padding-bottom: 0px;
 }
-.set-padding{
+
+.set-padding {
   padding-top: 0px;
 }
-

@@ -1,261 +1,202 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="flex-header">
-        <nav class="nav">
-          <!-- <div class="mainlogo"> -->
-            <a href="./index.html" lang="en" class="logo"
-              ><span class="logo-link">Web</span><span></span>Studio</a
-            >
-            <ul class="nav-links list">
-              <li class="item"><a href="./index.html" class="link">Студія</a></li>
-              <li class="item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
-              <li class="item"><a href="" class="link">Контакти</a></li>
-            </ul>
-            <!-- Я РОЗУМІЮ ЩО КОНТАКТИ ЦЕ НЕ ТЕГ NAV АЛЕ ІНАКШЕ ВОНИ В ОДИН
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="flex-header">
+      <nav class="nav">
+        <!-- <div class="mainlogo"> -->
+        <a href="./index.html" lang="en" class="logo"><span class="logo-link">Web</span><span></span>Studio</a>
+        <ul class="nav-links list">
+          <li class="item"><a href="./index.html" class="link">Студія</a></li>
+          <li class="item">
+            <a href="./portfolio.html" class="link current">Портфоліо</a>
+          </li>
+          <li class="item"><a href="" class="link">Контакти</a></li>
+        </ul>
+        <!-- Я РОЗУМІЮ ЩО КОНТАКТИ ЦЕ НЕ ТЕГ NAV АЛЕ ІНАКШЕ ВОНИ В ОДИН
             РЯД В ХЕДЕРІ НЕ МОГЛИ СТАВАТИ, БО ФЛЕКС ТЛЬТКИ НА ДІТЕЙ ВПЛИВАЄ -->
-            
-            <ul class="nav-contacts list">
-              <li>
-                <a href="mailto:info@devstudio.com" class="contact link link"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a href="tel:+380961111111" class="contact link link"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </nav>
-  
-          
-          <!-- </div> -->
-          
+
+        <ul class="nav-contacts list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="contact link link">info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="contact link link">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- </div> -->
+    </div>
+  </header>
+  <main>
+    <section class="container section">
+      <!-- Портфоліо -->
+      <h1 class="visually-hidden">Портфоліо</h1>
+      <div class="container">
+        <ul class="buttons list">
+          <li class="item">
+            <button type="button" class="button primaru">Усі</button>
+          </li>
+          <li class="item">
+            <button type="button" class="button primaru">Веб-сайти</button>
+          </li>
+          <li class="item">
+            <button type="button" class="button primaru">Додатки</button>
+          </li>
+          <li class="item">
+            <button type="button" class="button primaru">Дизайн</button>
+          </li>
+          <li class="item">
+            <button type="button" class="button primaru">Маркетинг</button>
+          </li>
+        </ul>
       </div>
-    </header>
-    <main>
-      <section class="container section">
-        <!-- Портфоліо -->
-        <h1 class="visually-hidden">Портфоліо</h1>
-        <div class="container">
-          <ul class="buttons list">
-            <li class="item"><button type="button" class="button primaru">Усі</button></li>
-            <li class="item">
-              <button type="button" class="button primaru">Веб-сайти</button>
-            </li>
-            <li class="item">
-              <button type="button" class="button primaru">Додатки</button>
-            </li>
-            <li class="item">
-              <button type="button" class="button primaru">Дизайн</button>
-            </li>
-            <li class="item">
-              <button type="button" class="button primaru">Маркетинг</button>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="section set-padding">
-        <div class="container">
-          <ul class="portfolio card-set">
-            
-            
-            <li class="item">
-              <article>
-                <div class="card-portfolio">
-                  <a href="" class="portfolio-link link">
-                    <img
-                      src="./images/portfolio/laptop.jpg"
-                      alt="ноутбук з зображенням веб-сторінки"
-                      width="370"
-                    />
-                    <div class="border">
-                      <h2>Технокряк</h2>
-                      <p class="portfolio-subtitle">Веб-сайт</p>
-                    </div>
-                  </a>
-                </div>
-              </article>
-            </li>
-            
-            <li class="item">
-              <article>
-                <div class="card-portfolio">
-                  <a href="" class="portfolio-link link">
-                  <img
-                src="./images/portfolio/basketball.jpg"
-                alt="два хлоаця грають в баскетбол"
-                width="370"
-                 />
+    </section>
+    <section class="section set-padding">
+      <div class="container">
+        <ul class="portfolio card-set">
+          <li class="item">
+            <article>
+              <div class="card-portfolio">
+                <a href="" class="portfolio-link link">
+                  <img src="./images/portfolio/laptop.jpg" alt="ноутбук з зображенням веб-сторінки" width="370" />
+                  <div class="border">
+                    <h2>Технокряк</h2>
+                    <p class="portfolio-subtitle">Веб-сайт</p>
+                  </div>
+                </a>
+              </div>
+            </article>
+          </li>
+
+          <li class="item">
+            <article>
+              <div class="card-portfolio">
+                <a href="" class="portfolio-link link">
+                  <img src="./images/portfolio/basketball.jpg" alt="два хлоаця грають в баскетбол" width="370" />
                   <!--не знаю як змінити мову на англійську, якщо в рядку перше слово "постер" українською  -->
                   <div class="border">
-                    <h2>
-                      Постер New Orlean vs Golden Star
-                    </h2>
+                    <h2>Постер New Orlean vs Golden Star</h2>
                     <p class="portfolio-subtitle">Дизайн</p>
                   </div>
                 </a>
-                </div>
-              </article>
-            </li>
-            
-            
-            <li class="item">
-              <article>
-                <div class="card-portfolio">
-                  <a href="" class="portfolio-link link">
-                    <img
-                    src="./images/portfolio/seafood.jpg"
-                    alt="логотип ресторану з однотонним лососем на задньому фоні"
-                    width="370"
-                    />
-                    <!-- те саме питання з мовою заголовку -->
-                    <div class="border">
-                      <h2>Ресторан Seafood</h2>
-                      <p class="portfolio-subtitle">Додаток</p>
-                    </div>
-                  </a>
-                  
-                </div>
-              </article>
-            </li>
-            
-            
-            <li class="item">
-              <article>
-                <div class="card-portfolio">
-                  <a href="" class="portfolio-link link">
-                    <img
-                    src="./images/portfolio/headphones.jpg"
-                    alt="навушники"
-                    width="370"
-                    />
-                    <div class="border">
-                      <h2>Проєкт Prime</h2>
-                      <p class="portfolio-subtitle">Маркетинг</p>
-                    </div>
-                  </a>
-                </div>
-              </article>
-            </li>
-            
-            
-            <li class="item">
-              <article>
-                <div class="card-portfolio">
-                  <a href="" class="portfolio-link link">
-                    <img
-                    src="./images/portfolio/boxes.jpg"
-                    alt="дві коробки"
-                    width="370"
-                    />
-                    <div class="border">
-                      <h2>Проєкт Boxes</h2>
-                      <p class="portfolio-subtitle">Додаток</p>
-                    </div>
-                  </a>
-                </div>
-              </article>
-            </li>
-            
-            
-            <li class="item">
-              <article>
-                <div class="card-portfolio">
-                  <a href="" class="portfolio-link link" >
-                    <img
-                    src="./images/portfolio/iMac.jpg"
-                    alt="комп'ютер відомої марки"
-                    width="370"
-                    />
-                    <div class="border">
-                      <h2 lang="en">
-                        Inspiration has no Borders
-                      </h2>
-                      <p class="portfolio-subtitle">Веб-сайт</p>
-                    </div>  
-                  </a>
-                </div>
-              </article>
-            </li>
-            
-            
-            <li class="item">
-              <article>
-                <div class="card-portfolio">
-                  <a href="" class="portfolio-link link">
-                    <img src="./images/portfolio/book.jpg" alt="журнал" width="370" />
-                    <div class="border">
-                      <h2>
-                      Видання Limited Edition
-                      </h2>
-                      <p class="portfolio-subtitle">Дизайн</p>
-                    </div>
-                  </a>   
-                </div>
-              </article>
-            </li>
-            
-            
-            <li class="item">
-              <article>
-                <div class="card-portfolio">
-                  <a href="" class="portfolio-link link"><img
-                    src="./images/portfolio/lab.jpg"
-                    alt="картонний ярлик з логотипом проєкту"
-                    width="370"
-                    />
-                    <div class="border">
-                      <h2>Проєкт LAB</h2>
-                      <p class="portfolio-subtitle">Маркетинг</p>
-                    </div>
-                  </a>  
-                </div>
-              </article>
-            </li>
-            
-            
-            <li class="item">
-              <article>
-                <div class="card-portfolio">
-                  <a href="" class="portfolio-link link">
-                    <img
-                    src="./images/portfolio/hands.jpg"
-                    alt="руки над клавіатурою ноутбуку"
-                    width="370"
-                    />
-                    <div class="border">
-                      <h2>Growing Business</h2>
-                      <p class="portfolio-subtitle">Додаток</p>
-                    </div>
-                  </a>
-                </div>
-              </article>
-            </li>
+              </div>
+            </article>
+          </li>
 
+          <li class="item">
+            <article>
+              <div class="card-portfolio">
+                <a href="" class="portfolio-link link">
+                  <img src="./images/portfolio/seafood.jpg"
+                    alt="логотип ресторану з однотонним лососем на задньому фоні" width="370" />
+                  <!-- те саме питання з мовою заголовку -->
+                  <div class="border">
+                    <h2>Ресторан Seafood</h2>
+                    <p class="portfolio-subtitle">Додаток</p>
+                  </div>
+                </a>
+              </div>
+            </article>
+          </li>
 
+          <li class="item">
+            <article>
+              <div class="card-portfolio">
+                <a href="" class="portfolio-link link">
+                  <img src="./images/portfolio/headphones.jpg" alt="навушники" width="370" />
+                  <div class="border">
+                    <h2>Проєкт Prime</h2>
+                    <p class="portfolio-subtitle">Маркетинг</p>
+                  </div>
+                </a>
+              </div>
+            </article>
+          </li>
 
+          <li class="item">
+            <article>
+              <div class="card-portfolio">
+                <a href="" class="portfolio-link link">
+                  <img src="./images/portfolio/boxes.jpg" alt="дві коробки" width="370" />
+                  <div class="border">
+                    <h2>Проєкт Boxes</h2>
+                    <p class="portfolio-subtitle">Додаток</p>
+                  </div>
+                </a>
+              </div>
+            </article>
+          </li>
 
+          <li class="item">
+            <article>
+              <div class="card-portfolio">
+                <a href="" class="portfolio-link link">
+                  <img src="./images/portfolio/iMac.jpg" alt="комп'ютер відомої марки" width="370" />
+                  <div class="border">
+                    <h2 lang="en">Inspiration has no Borders</h2>
+                    <p class="portfolio-subtitle">Веб-сайт</p>
+                  </div>
+                </a>
+              </div>
+            </article>
+          </li>
 
+          <li class="item">
+            <article>
+              <div class="card-portfolio">
+                <a href="" class="portfolio-link link">
+                  <img src="./images/portfolio/book.jpg" alt="журнал" width="370" />
+                  <div class="border">
+                    <h2>Видання Limited Edition</h2>
+                    <p class="portfolio-subtitle">Дизайн</p>
+                  </div>
+                </a>
+              </div>
+            </article>
+          </li>
 
+          <li class="item">
+            <article>
+              <div class="card-portfolio">
+                <a href="" class="portfolio-link link"><img src="./images/portfolio/lab.jpg"
+                    alt="картонний ярлик з логотипом проєкту" width="370" />
+                  <div class="border">
+                    <h2>Проєкт LAB</h2>
+                    <p class="portfolio-subtitle">Маркетинг</p>
+                  </div>
+                </a>
+              </div>
+            </article>
+          </li>
 
+          <li class="item">
+            <article>
+              <div class="card-portfolio">
+                <a href="" class="portfolio-link link">
+                  <img src="./images/portfolio/hands.jpg" alt="руки над клавіатурою ноутбуку" width="370" />
+                  <div class="border">
+                    <h2>Growing Business</h2>
+                    <p class="portfolio-subtitle">Додаток</p>
+                  </div>
+                </a>
+              </div>
+            </article>
+          </li>
 
-
-            
-            <!-- <li class="item">
+          <!-- <li class="item">
               
             </li>
             
@@ -294,39 +235,29 @@
             <li class="item">
               
             </li> -->
-
-            
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <a lang="en" href="./index.html" class="footer-logo"><span class="logo-link">Web</span>Studio</a>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <a lang="en" href="./index.html" class="footer-logo"><span class="logo-link">Web</span>Studio</a>
       <address class="address">
         <ul class="address-links list">
           <li>
-            <a
-              href="https://goo.gl/maps/rEYh6PdM1hheBsNV8"
-              class="link"
-              target="_blank"
-              rel="nooper noreferrer nofollow"
-              ><span class="map">м. Київ, пр-т Лесі Українки, 26</span></a
-            >
+            <a href="https://goo.gl/maps/rEYh6PdM1hheBsNV8" class="link" target="_blank"
+              rel="nooper noreferrer nofollow"><span class="map">м. Київ, пр-т Лесі Українки, 26</span></a>
           </li>
           <li>
-            <a href="mailto:info@devstudio.com" class="contact link"
-              >info@devstudio.com</a
-            >
+            <a href="mailto:info@devstudio.com" class="contact link">info@devstudio.com</a>
           </li>
           <li>
-            <a href="tel:+380961111111" class="contact link"
-              >+38 096 111 11 11</a
-            >
+            <a href="tel:+380961111111" class="contact link">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
