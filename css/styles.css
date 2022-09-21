@@ -385,6 +385,7 @@ ul.nav-links.list {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  letter-spacing: 0.03em;
 
   /* text-align: center; */
 }
@@ -392,6 +393,7 @@ ul.nav-links.list {
 /* відступи між елементами наша команда */
 .team img {
   margin-bottom: 30px;
+  
   
 }
 
@@ -549,6 +551,7 @@ address ul {
   justify-content: space-around;
   padding-left: 215px;
   padding-right: 215px;
+  padding-bottom: 94px;
 }
 
 .features .item{
@@ -592,6 +595,9 @@ ul.list .item:not(:last-child) {
 .work-item:not(:last-child) {
   margin-right: 30px;
 
+}
+.work-item{
+  min-width: 370px;
 }
 
 .nav-container .nav-links.list {
