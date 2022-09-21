@@ -42,6 +42,8 @@ img {
   height: auto;
 }
 
+
+
 /* параграфи в файлі index.html */
 .features .text {
   color: rgba(117, 117, 117, 1);
@@ -390,6 +392,7 @@ ul.nav-links.list {
 /* відступи між елементами наша команда */
 .team img {
   margin-bottom: 30px;
+  
 }
 
 .team .card-text {
@@ -411,6 +414,15 @@ ul.nav-links.list {
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
+}
+.team .item{
+  background: #FFFFFF;
+/* material shadow v1 */
+  min-width: 270px;
+  
+
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .portfolio a {
@@ -539,6 +551,10 @@ address ul {
   padding-right: 215px;
 }
 
+.features .item{
+  min-width: 270px;
+}
+
 .features .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -550,8 +566,10 @@ address ul {
 /* індекс хтмл наша команда */
 ul.list.function-marg {
   display: flex;
+  justify-content: center;
   padding-left: 215px;
   padding-right: 215px;
+
 
 }
 
@@ -648,6 +666,9 @@ ul.list .item:not(:last-child) {
 
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container .section{
   padding-bottom: 94px;
 }
 
