@@ -493,13 +493,15 @@ div.card-content{
   line-height: 1.87;
   margin-top: 0;
   margin-bottom: 0;
+  letter-spacing: 0.03em;
 }
 
-.portfolio h2 {
+.text-title {
   color: var(--title-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 
@@ -649,12 +651,7 @@ ul.list .item:not(:last-child) {
 
 
 
-.border {
-  border-right: 1px solid var(--portfolio-card-border-color);
-  border-left: 1px solid var(--portfolio-card-border-color);
-  border-bottom: 1px solid var(--portfolio-card-border-color);
 
-}
 
 .section {
   padding-top: 94px;
@@ -677,8 +674,11 @@ ul.list .item:not(:last-child) {
 }
 
 .text{
-  margin-top: 20px;
-  margin-bottom: 20px;
+  
+  
+  border: 1px solid var(--portfolio-card-border-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-right: 20px;
   padding-left: 20px;
   
