@@ -18,14 +18,17 @@ html {
 :root {
   --primary-text-color: rgba(117, 117, 117, 1);
   --title-color: rgba(33, 33, 33, 1);
-  --accent-color: #2196f3;
+  --accent-color: rgba(33, 150, 243, 1);
   --button-color: var(--title-color);
-  --button-background: #f5f4fa;
-  --bgc-secondary: #f5f4fa;
-  --common-bgc: #f5f5f5;
-  --footer-hero-bgc: #2f303a;
+  --button-background: rgba(245, 244, 250, 1);
+  --bgc-secondary: rgba(245, 244, 250, 1);
+  --common-bgc: rgba(255, 255, 255, 1);
+  --footer-hero-bgc: rgba(47, 48, 58, 1);
+  --portfolio-card-bgc: rgba(238, 238, 238, 1);
+  --second-half-logo: rgba(0, 0, 0, 1);
+  --address-link-color-footer: rgba(255, 255, 255, 0.6);
+  --header-bottom-border: rgba(236, 236, 236, 1);
   --card-gap: 30px;
-
 }
 
 body {
@@ -138,11 +141,12 @@ img {
 
 /* стилізація хедера */
 .header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: var(--header-bottom-border);
+  border-bottom: 1px solid var(--header-bottom-border);
 }
 
 a.logo {
-  color: rgba(0, 0, 0, 1);
+  color: var(--second-half-logo);
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
@@ -505,6 +509,7 @@ address {
 .buttons {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 /* .flex {
@@ -657,9 +662,9 @@ ul.list .item:not(:last-child) {
   padding-right: 20px;
   padding-left: 20px;
 }
-
+/* Це утиліта для портфоліо де треба ПЕРЕНЕСТИ ВСЕ В ОДНУ СЕКЦІЮ до цього тут був падінг */
 .set-padding {
-  padding-top: 50px;
+  margin-top: 50px;
 }
 .set-top-padding{
   padding-top: 94px;
