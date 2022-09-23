@@ -100,7 +100,7 @@ button{
 
   font-family: inherit;
   background-color: var(--button-background);
-  border: transparent;
+
   color: var(--button-color);
   
   font-weight: 500;
@@ -128,7 +128,7 @@ button{
   padding: 10px 32px;
   
   background-color: var(--accent-color);
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   line-height: 1.87;
   font-weight: 700;
   min-width: 216px;
@@ -176,9 +176,7 @@ a.logo {
   
 }
 
-.nav{
-  margin-right: auto;
-}
+
 
 /* .logo:visited{
     color: (33, 33, 33, 1);
@@ -325,6 +323,7 @@ ul.nav-links.list {
   font-size: 44px;
   margin-bottom: 30px;
   line-height: 1.36;
+  text-transform: uppercase;
 }
 
 .hero {
@@ -367,11 +366,11 @@ ul.nav-links.list {
 
 .address-links .contact {
   
-  color: var(--address-link-color-footer);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  opacity: 60%;
+  
 }
 .address-links .item{
   margin-top: 9px;
@@ -537,6 +536,7 @@ address {
 .buttons {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
   
 }
 
@@ -627,13 +627,11 @@ ul.list .item-worker:not(:last-child) {
   flex-wrap: wrap;
   margin-top: calc(-1*var(--card-gap));
   margin-left: calc(-1*var(--card-gap));
-  margin-top: 50px;
+  
 }
 
 
-.card-set .item:nth-child(-n+3){
-  margin-top: 0px;
-}
+
 
 .card-set .item {
 
@@ -682,10 +680,11 @@ footer{
   
   
   border: 1px solid var(--portfolio-card-border-color);
+  border-top: none;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
   
 }
 /* Це утиліта для портфоліо де треба ПЕРЕНЕСТИ ВСЕ В ОДНУ СЕКЦІЮ до цього тут був падінг */
