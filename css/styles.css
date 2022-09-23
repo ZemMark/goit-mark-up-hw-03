@@ -16,18 +16,18 @@ html {
 
 /* Решта коду */
 :root {
-  --primary-text-color: rgba(117, 117, 117, 1);
-  --title-color: rgba(33, 33, 33, 1);
-  --accent-color: rgba(33, 150, 243, 1);
-  --button-color: var(--title-color);
-  --button-background: rgba(245, 244, 250, 1);
-  --bgc-secondary: rgba(245, 244, 250, 1);
-  --common-bgc: rgba(255, 255, 255, 1);
-  --footer-hero-bgc: rgba(47, 48, 58, 1);
-  --portfolio-card-border-color: rgba(238, 238, 238, 1);
-  --second-half-logo: rgba(0, 0, 0, 1);
-  --address-link-color-footer: rgba(255, 255, 255, 0.6);
-  --header-bottom-border: rgba(236, 236, 236, 1);
+  --primary-text-color:#757575;
+  --title-color: #212121;
+  --accent-color: #2196F3;
+  --button-color: #212121;
+  --button-background: #F5F4FA;
+  --bgc-secondary: #F5F4FA;
+  --common-bgc: #FFFFFF;
+  --footer-hero-bgc: #2F303A;
+  --portfolio-card-border-color: #EEEEEE;
+  --second-half-logo: #000000;
+  --address-link-color-footer: #FFFFFF;
+  --header-bottom-border: #ECECEC;
   --card-gap: 30px;
 }
 
@@ -36,7 +36,7 @@ body {
   background-color: #ffffff;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  font-size: 14;
+  font-size: 14px;
 }
 
 img {
@@ -59,7 +59,13 @@ img {
   
   
 }
+address{
+  font-style: normal;
+}
 
+button{
+  border: none;
+}
 
 
 
@@ -122,16 +128,13 @@ img {
 .button.secondary {
   padding: 10px 32px;
   
-
-
   background-color: var(--accent-color);
   color: rgba(255, 255, 255, 1);
   line-height: 1.87;
   font-weight: 700;
   min-width: 216px;
   text-align: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  
+  letter-spacing: 0.06em;
   /* position: absolute;
     width: 216px;
     height: 50px;
@@ -186,6 +189,7 @@ a.logo {
 }
 
 /* cстилізація всіх заголовків */
+p,
 h1,
 h2,
 h3,
@@ -194,6 +198,7 @@ h5,
 h6 {
   
   margin: 0;
+  padding: 0;
 }
 
 /* .nav-links .link{
@@ -309,20 +314,13 @@ ul.nav-links.list {
 
 /* стилізація блоку герой */
 
-.hero-title>h1 {
-  color: #fff;
-  /* line-height: 1.36px; */
-  /* margin: 0 auto; */
+
+
+.hero .hero-title {
   letter-spacing: 0.06em;
-}
+  margin: 0 auto;
 
-
-.hero.section{
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-.hero>.hero-title {
-  
+  color: #fff;
   width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -359,6 +357,7 @@ ul.nav-links.list {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  
 
 }
 
@@ -368,10 +367,18 @@ ul.nav-links.list {
 }
 
 .address-links .contact {
-  color: rgba(255, 255, 255, 0.6);
+  
+  color: var(--address-link-color-footer);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  opacity: 60%;
+}
+.address-links .item{
+  margin-top: 9px;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .address-links .contact:hover,
@@ -408,13 +415,12 @@ ul.nav-links.list {
 }
 
 div.card-content{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.team .card-text {
-  margin-top: 0;
-  margin-bottom: 0;
+.team .card-job {
+  
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.18;
@@ -668,12 +674,12 @@ ul.list .item:not(:last-child) {
 -окрема утиліта з нижнім падингом
 
 */
-.padding-footer{
+footer{
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.text{
+.card-text{
   
   
   border: 1px solid var(--portfolio-card-border-color);
